@@ -1,0 +1,19 @@
+{
+  "name": "lg-e6-remote",
+  "version": "1.0.0",
+  "description": "LG E6 remote utility",
+  "main": "e6-remote.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwfitzgerald/lg-e6-remote.git"
+  },
+  "author": "Luke Fitzgerald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwfitzgerald/lg-e6-remote/issues"
+  },
+  "homepage": "https://github.com/lwfitzgerald/lg-e6-remote#readme"
+}
