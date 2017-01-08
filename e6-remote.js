@@ -53,9 +53,9 @@ function sendChanDown(sock) {
 }
 
 function interactive(sock) {
-	// listen for the "keypress" event
-	process.stdin.on('keypress', function (ch, key) {
-		winston.log('info', '"' + key.name + '" pressed');
+    // listen for the "keypress" event
+    process.stdin.on('keypress', function (ch, key) {
+        winston.log('info', '"' + key.name + '" pressed');
         if (key.ctrl && key.name === 'c') {
             process.stdin.pause();
             process.exit(0);
@@ -74,11 +74,11 @@ function interactive(sock) {
             } else {
                 sendButton(sock, button);
             }
-		}
-	});
+        }
+    });
 
-	process.stdin.setRawMode(true);
-	process.stdin.resume(); 
+    process.stdin.setRawMode(true);
+    process.stdin.resume(); 
 }
 
 function openMenu(sock) {
