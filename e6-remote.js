@@ -133,62 +133,6 @@ function openSettings(sock) {
     .then(sendButtonOp(sock, 'ENTER'));
 }
 
-function openSettingsOld(sock) {
-    const pictureModeWait = 90;
-    
-    openMenu(sock)
-    .then(sleepOp(100))
-
-    .then(logOp('\nSwitching to Side menu'))
-    .then(sendButtonOp(sock, 'UP'))
-    .then(sendButtonOp(sock, 'UP'))
-    .then(sendButtonOp(sock, 'UP'))
-    .then(sendButtonOp(sock, 'ENTER'))
-
-    .then(logOp('\nSwitching to Settings menu'))
-    .then(sleepOp(800))
-    .then(sendButtonOp(sock, 'UP'))
-    .then(sendButtonOp(sock, 'ENTER'))
-
-    .then(logOp('\nSwitching to Picture settings menu'))
-    .then(sleepOp(3400))
-    .then(sendButtonOp(sock, 'RIGHT'))
-
-    .then(logOp('\nSwitching to Picture mode settings menu'))
-    .then(sleepOp(200))
-    .then(sendButtonOp(sock, 'ENTER'))
-
-    .then(logOp('\nSwitching to Expert Controls menu'))
-    .then(sleepOp(1500))
-    .then(chanDownOp())
-    .then(chanDownOp())
-    .then(sleepOp(80))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'UP'))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'UP'))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'UP'))
-    .then(sleepOp(80))
-    .then(sendButtonOp(sock, 'ENTER'))
-
-    .then(logOp('\nSwtching to White Balance menu'))
-    .then(sleepOp(1500))
-    .then(sendButtonOp(sock, 'DOWN'))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'DOWN'))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'DOWN'))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'DOWN'))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'DOWN'))
-    .then(sleepOp(pictureModeWait))
-    .then(sendButtonOp(sock, 'DOWN'))
-    .then(sleepOp(80))
-    .then(sendButtonOp(sock, 'ENTER'))
-}
-
 lgtv.on('connect', function () {
     winston.log('info', 'Connected');
 
