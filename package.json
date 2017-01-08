@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/lwfitzgerald/lg-e6-remote/issues"
   },
-  "homepage": "https://github.com/lwfitzgerald/lg-e6-remote#readme"
+  "homepage": "https://github.com/lwfitzgerald/lg-e6-remote#readme",
+  "dependencies": {
+    "keypress": "^0.2.1",
+    "lgtv2": "^1.2.0",
+    "winston": "^2.3.0"
+  }
 }
